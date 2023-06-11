@@ -8,6 +8,88 @@
     font-family: "Orbitron";
 }
 
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 1;
+    padding: 12px;
+}
+
+.form {
+    padding: 28px;
+    background-color: rgb(33, 39, 43);
+    border-radius: 10px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    color: white;
+}
+
+form input,
+textarea {
+    margin-bottom: 12px;
+}
+
+form input,
+textarea {
+    outline: none;
+    border: none;
+    padding: 4px;
+}
+
+form input[type=submit] {
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 56px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 7px;
+    background-color: #0070f3;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+}
+
+.con .contact-button {
+
+    margin-left: 50%;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 56px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 7px;
+    background-color: #0070f3;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-button:hover {
+    background: rgba(0, 118, 255, 0.9);
+    box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+}
+
+.dropdown {
+    display: none;
+}
+
 #nav {
     width: 100%;
     padding: 12px;
@@ -50,4 +132,43 @@ li a {
 
 li a:hover {
     color: #3b3b3b;
+}
+
+.slika {
+    z-index: -2;
+    position: fixed;
+}
+
+.slika img {
+    width: 100%;
+    transform: translateY(-30%);
+}
+
+.spacer {
+    height: 100vh;
+}
+
+h1 {
+    color: black;
+    font-size: 64px;
+    font-weight: lighter;
+}
+
+body {
+    background-color: #111619;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .dropdown {
+        display: inline;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .form {
+        padding: 12px;
+    }
 }
