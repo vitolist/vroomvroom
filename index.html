@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>Vroom Vroom</title>
+
+    <script>
+        function smoothScroll(target) {
+            if (target != "#") {
+                var element = document.querySelector(target);
+                var offset = element.offsetTop;
+                var navbar = document.getElementById('nav');
+                console.log(offset)
+
+                window.scrollTo({
+                    top: offset - navbar.offsetHeight,
+                    behavior: 'smooth'
+                });
+            } else {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var links = document.querySelectorAll('a[href^="#"]');
+
+            for (var i = 0; i < links.length; i++) {
+                links[i].addEventListener('click', function (e) {
+                    e.preventDefault();
+                    smoothScroll(this.getAttribute('href'));
+                });
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="slika">
+        <img src="cars/croatia/SupraMK5-4.jpg" alt="SupraMK5-4">
+    </div>
+    <div id="nav">
+        <ul class="navbar">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#cars">CARS</a></li>
+            <li><a href="#">LOCATIONS</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <div class="spacer" id="spacer"></div>
+
+    <div id="container">
+        <div id="cars">
+            <h1>CARS</h1>
+        </div>
+    </div>
+</body>
+
+<script>
+    var nav = document.getElementById('nav');
+    var spacer = document.getElementById('spacer');
+
+    nav.classList.add("nav-transparent");
+    window.onscroll = function () {
+        if (document.documentElement.scrollTop >= spacer.offsetHeight - nav.offsetHeight) {
+            nav.classList.add("nav-colored");
+            nav.classList.remove("nav-transparent");
+        }
+        else {
+            nav.classList.add("nav-transparent");
+            nav.classList.remove("nav-colored");
+        }
+    };
+</script>
+
+</html>
