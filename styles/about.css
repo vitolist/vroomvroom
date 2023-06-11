@@ -18,48 +18,12 @@
     padding: 12px;
 }
 
-.form {
-    padding: 28px;
-    background-color: rgb(33, 39, 43);
-    border-radius: 10px;
+.about {
+    background-color: white;
+    padding: 12px;
+    border-radius: 4px;
 }
 
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    color: white;
-}
-
-form input,
-textarea {
-    margin-bottom: 12px;
-}
-
-form input,
-textarea {
-    outline: none;
-    border: none;
-    padding: 4px;
-}
-
-form input[type=submit] {
-    outline: 0;
-    cursor: pointer;
-    border: none;
-    padding: 0 56px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 7px;
-    background-color: #0070f3;
-    color: white;
-    font-weight: 700;
-    font-size: 16px;
-    box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
-}
 
 .con .contact-button {
 
