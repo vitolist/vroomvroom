@@ -23,18 +23,18 @@
         <div class="dropdown">
             <ul>
                 <li><a href="#">HOME</a></li>
-                <li><a href="about.html">O NAMA</a></li>
+                <li><a href="about.php">O NAMA</a></li>
                 <li><a href="#cars">AUTI</a></li>
                 <li><a href="#lokacije">LOKACIJE</a></li>
-                <li><a href="contact.html">KONTAKT</a></li>
+                <li><a href="contact.php">KONTAKT</a></li>
             </ul>
         </div>
         <ul class="navbar">
             <li><a href="#">HOME</a></li>
-            <li><a href="about.html">O NAMA</a></li>
+            <li><a href="about.php">O NAMA</a></li>
             <li><a href="#cars">AUTI</a></li>
             <li><a href="#lokacije">LOKACIJE</a></li>
-            <li><a href="contact.html">KONTAKT</a></li>
+            <li><a href="contact.php">KONTAKT</a></li>
         </ul>
     </div>
 
@@ -86,6 +86,11 @@
             </div>
         </div>
     </div>
+
+
+    <?php
+    include 'footer.php';
+    ?>
 </body>
 
 <script src="scripts/color_on_scroll.js"></script>

@@ -23,18 +23,18 @@
     <div id="nav">
         <div class="dropdown">
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">O NAMA</a></li>
-                <li><a href="index.html#auti">AUTI</a></li>
-                <li><a href="index.html#lokacije">LOKACIJE</a></li>
+                <li><a href="index.php">HOME</a></li>
+                <li><a href="about.php">O NAMA</a></li>
+                <li><a href="index.php#auti">AUTI</a></li>
+                <li><a href="index.php#lokacije">LOKACIJE</a></li>
                 <li><a href="#">KONTAKT</a></li>
             </ul>
         </div>
         <ul class="navbar">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">O NAMA</a></li>
-            <li><a href="index.html#auti">AUTI</a></li>
-            <li><a href="index.html#lokacije">LOKACIJE</a></li>
+            <li><a href="index.php">HOME</a></li>
+            <li><a href="about.php">O NAMA</a></li>
+            <li><a href="index.php#auti">AUTI</a></li>
+            <li><a href="index.php#lokacije">LOKACIJE</a></li>
             <li><a href="#">KONTAKT</a></li>
         </ul>
     </div>
@@ -49,12 +49,15 @@
                 <label for="">E-mail</label>
                 <input placeholder="E-mail" type="text">
                 <label for="">Poruka</label>
-                <textarea placeholder="Ostavite poruku" name="" id="" cols="30" rows="10"
-                    style="resize: none;"></textarea>
+                <textarea placeholder="Ostavite poruku" name="" id="" cols="30" rows="10" style="resize: none;"></textarea>
                 <input type="submit" value="SUBMIT" onclick="">
             </form>
         </div>
     </div>
+
+    <?php
+    include 'footer.php';
+    ?>
 
 </body>
 

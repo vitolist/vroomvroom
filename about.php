@@ -23,19 +23,19 @@
     <div id="nav">
         <div class="dropdown">
             <ul>
-                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.php">HOME</a></li>
                 <li><a href="#">O NAMA</a></li>
-                <li><a href="index.html#auti">AUTI</a></li>
-                <li><a href="index.html#lokacije">LOKACIJE</a></li>
-                <li><a href="contact.html">KONTAKT</a></li>
+                <li><a href="index.php#auti">AUTI</a></li>
+                <li><a href="index.php#lokacije">LOKACIJE</a></li>
+                <li><a href="contact.php">KONTAKT</a></li>
             </ul>
         </div>
         <ul class="navbar">
-            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.php">HOME</a></li>
             <li><a href="#">O NAMA</a></li>
-            <li><a href="index.html#auti">AUTI</a></li>
-            <li><a href="index.html#lokacije">LOKACIJE</a></li>
-            <li><a href="contact.html">KONTAKT</a></li>
+            <li><a href="index.php#auti">AUTI</a></li>
+            <li><a href="index.php#lokacije">LOKACIJE</a></li>
+            <li><a href="contact.php">KONTAKT</a></li>
         </ul>
     </div>
 
@@ -51,6 +51,10 @@
             </p>
         </div>
     </div>
+
+    <?php
+    include 'footer.php';
+    ?>
 
 </body>
 
