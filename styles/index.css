@@ -144,4 +144,8 @@ h1 {
     .navbar {
         display: none;
     }
+
+    .spacer {
+        height: 50vh;
+    }
 }
