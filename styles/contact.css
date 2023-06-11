@@ -8,13 +8,6 @@
     font-family: "Orbitron";
 }
 
-
-#container {
-    height: 300vh;
-    background-color: white;
-    z-index: 1;
-}
-
 #nav {
     width: 100%;
     padding: 12px;
@@ -57,27 +50,4 @@ li a {
 
 li a:hover {
     color: #3b3b3b;
-}
-
-.slika {
-    z-index: -2;
-    position: fixed;
-}
-
-.slika img {
-    width: 100%;
-}
-
-.spacer {
-    height: 100vh;
-}
-
-img {
-    transform: translateY(-30%);
-}
-
-h1 {
-    color: black;
-    font-size: 64px;
-    font-weight: lighter;
 }
